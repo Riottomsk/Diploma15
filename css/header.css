@@ -1,0 +1,185 @@
+@CHARSET "UTF-8";
+h1.ProjectTitle{
+	margin-bottom:0;
+	margin-top:0;
+	padding-top:2px;
+	font-family:Candara;
+	font-weight:normal;
+}
+
+
+#HeaderWrap{
+	height:55px;
+	width:100%;
+	background:url(/images/bg/sample-main.jpg) #fff top;
+	background-position:top right;
+	background-repeat:repeat-x;
+	margin-bottom:0;
+	margin-top:0;
+	padding:0;
+	text-align:left;
+	position:fixed;
+	left:0;
+	top:0;
+	z-index:10;
+}
+
+#Header{
+	height:55px;
+	padding:0;
+	background:url(/images/bg/sample.jpg);
+	background-position:top right;
+	background-repeat:no-repeat;
+	padding-left:10px;
+	color:white;
+	position:relative;
+	
+}
+
+#Header a{
+	color:white;
+	text-decoration:none;
+	padding-right:20px;
+}
+
+
+#Header strong{
+	font-size:120%;
+}
+
+
+#mainMenu{
+	position:absolute;
+	top:-14px;
+	right:100px;
+}
+
+#mainMenu a{
+	text-decoration:underline;
+}
+
+a.dropDown, span.dropDown{
+	background:url(/images/bg/arrow.gif) no-repeat left center;
+}
+
+#subMenu li:hover a.dropDown, #subMenu li:hover span.dropDown, #mainMenu li:hover a.dropDown, #mainMenu li:hover span.dropDown {
+	background-image:url(/images/bg/arrow-hover.gif);
+	background-repeat:no-repeat;
+	background-position:left center;
+}
+
+#mainMenu li, #subMenu li{
+	display:block;
+	float:left;
+	padding:0.3em 0;
+	white-space:nowrap;
+}
+
+#mainMenu li:hover, #subMenu li:hover{
+	
+	color:#246;
+}
+
+#mainMenu li:hover a, #subMenu li:hover span{
+	color:#246;
+	background-color:white;
+	color:#2a5567;
+	-moz-border-radius-topleft:4px;
+	-moz-border-radius-topright:4px;
+}
+#subMenu li span{
+	padding: 0 1em;
+	white-space:nowrap;
+}
+#mainMenu li ul, #subMenu li ul{
+	display:none;
+	padding:0;
+	border:dotted 1px #246;
+}
+
+#mainMenu li:hover ul, #subMenu li:hover ul{
+	display:block;
+	position:absolute;
+	margin:0;
+	z-index:2;
+	width:70%;
+}
+
+#mainMenu li:hover ul li, #subMenu li:hover ul li{
+	display:block;
+	color:black;
+	float:none;
+	border-bottom:dotted 1px #99aac1;
+	background-position:center right;
+	background:white;
+}
+
+#mainMenu li:hover ul li a, #subMenu li:hover ul li a{
+	text-decoration:none;
+	background:none;
+	color:#2a5567;
+	-moz-border-radius:0;
+}
+
+#mainMenu li:hover ul li:hover, #subMenu li:hover ul li:hover{
+	background:#246;
+	background-position:center right;
+	
+}
+
+#mainMenu li:hover ul li:hover a, #subMenu li:hover ul li:hover a{
+	color:white;
+}
+
+
+#subMenu{
+	position:absolute;
+	bottom:-4px;
+	right:100px;
+}
+
+#mainMenu a, #subMenu a{
+	text-decoration:none;
+	padding:0 1em;
+	
+}
+
+#subMenu a:hover{
+	text-decoration:none;
+	padding:0 1em;
+}
+
+#subMenu span.active{
+	background:white;
+	background-position:top left;
+	background-repeat:no-repeat;
+	color:#2a5567;
+	padding:0 1em;
+	font-weight:bold;
+	height:13px;
+	-moz-border-radius-topleft:4px;
+	-moz-border-radius-topright:4px;
+}
+
+#subMenu span.activeLeft{
+	background:url(/images/bg/tab-left.gif);
+	background-position:top left;
+	background-repeat:no-repeat;
+	color:#2a5567;
+	padding:0;
+	font-weight:bold;
+	height:13px;
+	width:20px;
+	color:white;
+}
+
+#subMenu span.activeRight{
+	background:url(/images/bg/tab-right.gif);
+	background-position:top right;
+	background-repeat:no-repeat;
+	color:#2a5567;
+	padding:0;
+	font-weight:bold;
+	height:13px;
+	margin:0 0 0 -5px;
+}
