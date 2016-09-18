@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Загруженные документы</title>
+	<title>Р—Р°РіСЂСѓР¶РµРЅРЅС‹Рµ РґРѕРєСѓРјРµРЅС‚С‹</title>
 <style type ="text/css">
 #header {
 	position:absolute;
@@ -32,7 +32,7 @@ h2{
 <header>
 <div id="header">
 
-		<h1>Загруженные документы</h1>
+		<h1>Р—Р°РіСЂСѓР¶РµРЅРЅС‹Рµ РґРѕРєСѓРјРµРЅС‚С‹</h1>
 </div>
 </header>
 <br><br><br>
@@ -40,15 +40,15 @@ h2{
 
 <div>
 <form action='download.php' method=post>
-	<button name='sort' value=1 style='background:url(sample-main.jpg); height:55px; width:140px'><h2 align=center'> В работе </h2></button>
-	<button name='sort2' value=1 style='background:url(sample-main.jpg); height:55px; width:180px'><h2 align=center'> Завершенные </h2></button>
-	<button formaction = 'Docsexplorer.php' style='background:url(sample-main.jpg); height:40px; position:absolute; top:57px; right:5px'><h2 style=" line-height:3px; font-size: 15px"> К управлению документами </h2></button>	
+	<button name='sort' value=1 style='background:url(sample-main.jpg); height:55px; width:140px'><h2 align=center'> Р’ СЂР°Р±РѕС‚Рµ </h2></button>
+	<button name='sort2' value=1 style='background:url(sample-main.jpg); height:55px; width:180px'><h2 align=center'> Р—Р°РІРµСЂС€РµРЅРЅС‹Рµ </h2></button>
+	<button formaction = 'Docsexplorer.php' style='background:url(sample-main.jpg); height:40px; position:absolute; top:57px; right:5px'><h2 style=" line-height:3px; font-size: 15px"> Рљ СѓРїСЂР°РІР»РµРЅРёСЋ РґРѕРєСѓРјРµРЅС‚Р°РјРё </h2></button>	
 </form>
 <br>
 
 <form action='download.php' method=post>
 <input type='text' name='search' value=''>
-<input name="<?php if(isset($_POST['sort'])) { echo 'sort';} else {echo'sort2';}?>"type='submit' value='Искать'>
+<input name="<?php if(isset($_POST['sort'])) { echo 'sort';} else {echo'sort2';}?>"type='submit' value='РСЃРєР°С‚СЊ'>
 </form>
 
 
@@ -58,7 +58,7 @@ h2{
 if (isset($_POST['search']) && $_POST['search']<>"")
 {
 	$search = "and (customer LIKE '%".$_POST['search']."%' or object LIKE '%".$_POST['search']."%' or adress LIKE '%".$_POST['search']."%') ";
-	//$search = "and customer LIKE '%Томск%' ";
+	//$search = "and customer LIKE '%РўРѕРјСЃРє%' ";
 }
 else
 {
@@ -87,20 +87,20 @@ else
 
 
 echo "
-<h2 style='color:#000000'> В работе</h2>
+<h2 style='color:#000000'> Р’ СЂР°Р±РѕС‚Рµ</h2>
 <table border='1px'  cellspacing='0' cellpadding='1'>
 <tr>
 <form action='download.php' method='post'>
 	<td><button type=submit name='sort' value='1' style='width:100%'>#</button></td>
-	<td><button type=submit name='sort' value='2' style='width:100%'>Заказчик</button></td>
-	<td><button type=submit name='sort' value='3' style='width:100%'>Объект</button></td>
-	<td><button type=submit name='sort' value='4' style='width:100%'>Адрес</button></td>
-	<td><button type=submit name='sort' value='5' style='width:100%'>Дата загрузки документа</button></td>
-	<td><button type=submit name='sort' value='6' style='width:100%'>Этап</button></td>
-	<td><button type=submit name='sort' value='7' style='width:100%'>Тип</button></td>
-	<td><button type=submit name='sort' value='8' style='width:100%'>Менеджер</button></td>
-	<td><center>Скачать</center></td>
-	<td><center>В завершенные</center></td>
+	<td><button type=submit name='sort' value='2' style='width:100%'>Р—Р°РєР°Р·С‡РёРє</button></td>
+	<td><button type=submit name='sort' value='3' style='width:100%'>РћР±СЉРµРєС‚</button></td>
+	<td><button type=submit name='sort' value='4' style='width:100%'>РђРґСЂРµСЃ</button></td>
+	<td><button type=submit name='sort' value='5' style='width:100%'>Р”Р°С‚Р° Р·Р°РіСЂСѓР·РєРё РґРѕРєСѓРјРµРЅС‚Р°</button></td>
+	<td><button type=submit name='sort' value='6' style='width:100%'>Р­С‚Р°Рї</button></td>
+	<td><button type=submit name='sort' value='7' style='width:100%'>РўРёРї</button></td>
+	<td><button type=submit name='sort' value='8' style='width:100%'>РњРµРЅРµРґР¶РµСЂ</button></td>
+	<td><center>РЎРєР°С‡Р°С‚СЊ</center></td>
+	<td><center>Р’ Р·Р°РІРµСЂС€РµРЅРЅС‹Рµ</center></td>
 <input name='DESC' hidden value=".$_POST['sort'].">
 <input name='sortorder' hidden value=".$SO.">
 
@@ -117,18 +117,18 @@ $conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 $conn->exec("SET NAMES cp1251"); 
   if (!$conn) 
   { 
-    echo "<p>К сожалению, не доступен сервер mySQL</p>"; 
+    echo "<p>Рљ СЃРѕР¶Р°Р»РµРЅРёСЋ, РЅРµ РґРѕСЃС‚СѓРїРµРЅ СЃРµСЂРІРµСЂ mySQL</p>"; 
     //exit(); 
   } 
 $type = array(
-	   1 => "Заявка",
-	   2 => "Тех. задание",
-	   3 => "Спецификация",
-	   4 => "Смета",
-	   5 => "Коммерческое предложение",
-	   6 => "Договор",
-	   7 => "Наряд задание",
-	   8 => "Акт выполненных работ"
+	   1 => "Р—Р°СЏРІРєР°",
+	   2 => "РўРµС…. Р·Р°РґР°РЅРёРµ",
+	   3 => "РЎРїРµС†РёС„РёРєР°С†РёСЏ",
+	   4 => "РЎРјРµС‚Р°",
+	   5 => "РљРѕРјРјРµСЂС‡РµСЃРєРѕРµ РїСЂРµРґР»РѕР¶РµРЅРёРµ",
+	   6 => "Р”РѕРіРѕРІРѕСЂ",
+	   7 => "РќР°СЂСЏРґ Р·Р°РґР°РЅРёРµ",
+	   8 => "РђРєС‚ РІС‹РїРѕР»РЅРµРЅРЅС‹С… СЂР°Р±РѕС‚"
 	);
 $location = "C:/apache/localhost/www/files/";
 $start = strlen($location);
@@ -177,7 +177,7 @@ while ($row = $stat->fetch())
 	$t = $type[$row['type']];
 	echo"<tr><td>".$row['id']."</td><td>".$row['customer']."</td><td>".$row['object']."</td><td>".$row['adress']."</td><td>".$row['lastdate']."</td><td>".$row['direction']."</td><td>".$t."</td><td>".$row['manager']."</td>
 <td><form><button type=submit name='file' formaction='getfile.php' formmethod='post' value =".$row['file_adress'].">".substr($row['file_adress'],$start)."</button></form></td>
-<td><form><button type=submit name='num' formaction='setover.php' formmethod='post' value =".$row['id'].">"."»"."</button></form></td></tr>";//$test = $row['customer'];
+<td><form><button type=submit name='num' formaction='setover.php' formmethod='post' value =".$row['id'].">"."В»"."</button></form></td></tr>";//$test = $row['customer'];
 
 }
 
@@ -220,21 +220,21 @@ else
 }
 
 echo "
-<h2 style='color:#000000'> Завершенные </h2>
+<h2 style='color:#000000'> Р—Р°РІРµСЂС€РµРЅРЅС‹Рµ </h2>
 
 <table border='1px'  cellspacing='0' cellpadding='1'>
 <form action='download.php' method='post'>
 <tr>
 
 	<td><button type=submit name='sort2' value='1' style='width:100%'>#</button></td>
-	<td><button type=submit name='sort2' value='2' style='width:100%'>Заказчик</button></td>
-	<td><button type=submit name='sort2' value='3' style='width:100%'>Объект</button></td>
-	<td><button type=submit name='sort2' value='4' style='width:100%'>Адрес</button></td>
-	<td><button type=submit name='sort2' value='5' style='width:100%'>Дата загрузки документа</button></td>
-	<td><button type=submit name='sort2' value='6' style='width:100%'>Этап</button></td>
-	<td><button type=submit name='sort2' value='7' style='width:100%'>Тип</button></td>
-	<td><button type=submit name='sort2' value='8' style='width:100%'>Менеджер</button></td>
-	<td><center>Скачать</center></td>
+	<td><button type=submit name='sort2' value='2' style='width:100%'>Р—Р°РєР°Р·С‡РёРє</button></td>
+	<td><button type=submit name='sort2' value='3' style='width:100%'>РћР±СЉРµРєС‚</button></td>
+	<td><button type=submit name='sort2' value='4' style='width:100%'>РђРґСЂРµСЃ</button></td>
+	<td><button type=submit name='sort2' value='5' style='width:100%'>Р”Р°С‚Р° Р·Р°РіСЂСѓР·РєРё РґРѕРєСѓРјРµРЅС‚Р°</button></td>
+	<td><button type=submit name='sort2' value='6' style='width:100%'>Р­С‚Р°Рї</button></td>
+	<td><button type=submit name='sort2' value='7' style='width:100%'>РўРёРї</button></td>
+	<td><button type=submit name='sort2' value='8' style='width:100%'>РњРµРЅРµРґР¶РµСЂ</button></td>
+	<td><center>РЎРєР°С‡Р°С‚СЊ</center></td>
 <input name='DESC2' hidden value=".$_POST['sort2'].">
 <input name='sortorder2' hidden value=".$SO2.">
 
@@ -250,18 +250,18 @@ $conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 $conn->exec("SET NAMES cp1251"); 
   if (!$conn) 
   { 
-    echo "<p>К сожалению, не доступен сервер mySQL</p>"; 
+    echo "<p>Рљ СЃРѕР¶Р°Р»РµРЅРёСЋ, РЅРµ РґРѕСЃС‚СѓРїРµРЅ СЃРµСЂРІРµСЂ mySQL</p>"; 
     //exit(); 
   } 
 $type = array(
-	   1 => "Заявка",
-	   2 => "Тех. задание",
-	   3 => "Спецификация",
-	   4 => "Смета",
-	   5 => "Коммерческое предложение",
-	   6 => "Договор",
-	   7 => "Наряд задание",
-	   8 => "Акт выполненных работ"
+	   1 => "Р—Р°СЏРІРєР°",
+	   2 => "РўРµС…. Р·Р°РґР°РЅРёРµ",
+	   3 => "РЎРїРµС†РёС„РёРєР°С†РёСЏ",
+	   4 => "РЎРјРµС‚Р°",
+	   5 => "РљРѕРјРјРµСЂС‡РµСЃРєРѕРµ РїСЂРµРґР»РѕР¶РµРЅРёРµ",
+	   6 => "Р”РѕРіРѕРІРѕСЂ",
+	   7 => "РќР°СЂСЏРґ Р·Р°РґР°РЅРёРµ",
+	   8 => "РђРєС‚ РІС‹РїРѕР»РЅРµРЅРЅС‹С… СЂР°Р±РѕС‚"
 	);
 $location = "C:/apache/localhost/www/files/";
 $start = strlen($location);
