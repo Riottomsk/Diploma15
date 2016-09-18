@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Просмотр файлов в базе</title>
+	<title>РџСЂРѕСЃРјРѕС‚СЂ С„Р°Р№Р»РѕРІ РІ Р±Р°Р·Рµ</title>
 <style type ="text/css">
 #header {
 	position:absolute;
@@ -32,14 +32,14 @@ h2{
 <header>
 <div id="header">
 
-		<h1>Управление документами</h1>
+		<h1>РЈРїСЂР°РІР»РµРЅРёРµ РґРѕРєСѓРјРµРЅС‚Р°РјРё</h1>
 </div>
 </header>
 <br><br><br>
 
 <form>
-<button type=submit name='file' formaction='newfiles.php' formmethod='post' value ="" style='background:url(sample-main.jpg); '><h2>Загрузить файл на сервер</h2></button>
-<button type=submit name='sort' formaction='download.php' formmethod='post' value ="1" style='background:url(sample-main.jpg);'><h2>Посмотреть загруженные файлы</h2></button>
+<button type=submit name='file' formaction='newfiles.php' formmethod='post' value ="" style='background:url(sample-main.jpg); '><h2>Р—Р°РіСЂСѓР·РёС‚СЊ С„Р°Р№Р» РЅР° СЃРµСЂРІРµСЂ</h2></button>
+<button type=submit name='sort' formaction='download.php' formmethod='post' value ="1" style='background:url(sample-main.jpg);'><h2>РџРѕСЃРјРѕС‚СЂРµС‚СЊ Р·Р°РіСЂСѓР¶РµРЅРЅС‹Рµ С„Р°Р№Р»С‹</h2></button>
 </form>
 
 </body>
