@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 	<style>
   	 a { 
-    		text-decoration: none; /* Отменяем подчеркивание у ссылки */
+    		text-decoration: none; /* РћС‚РјРµРЅСЏРµРј РїРѕРґС‡РµСЂРєРёРІР°РЅРёРµ Сѓ СЃСЃС‹Р»РєРё */
    	   } 
  	</style>
 </head>
@@ -21,7 +21,7 @@ $conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 $conn->exec("SET NAMES cp1251"); 
   if (!$conn) 
   { 
-    echo "<p>К сожалению, не доступен сервер mySQL</p>"; 
+    echo "<p>Рљ СЃРѕР¶Р°Р»РµРЅРёСЋ, РЅРµ РґРѕСЃС‚СѓРїРµРЅ СЃРµСЂРІРµСЂ mySQL</p>"; 
    // exit(); 
   } 
 //$stat = $conn->query("Select customer from test where id=5;");
@@ -32,7 +32,7 @@ $conn->exec("SET NAMES cp1251");
 
 
 
-//$statement = $conn->query("INSERT INTO test VALUES (NULL,'Иван')");
+//$statement = $conn->query("INSERT INTO test VALUES (NULL,'РРІР°РЅ')");
    
 //header("Location: newfiles.php");
 if($_POST['doctype'])
@@ -98,7 +98,7 @@ $location = "C:/apache/localhost/www/files/";
 $filename = $_FILES['filename'];
  if($_FILES["filename"]["size"] > 1024*3*1024)
    {
-     echo ("alert(Размер файла превышает три мегабайта)");
+     echo ("alert(Р Р°Р·РјРµСЂ С„Р°Р№Р»Р° РїСЂРµРІС‹С€Р°РµС‚ С‚СЂРё РјРµРіР°Р±Р°Р№С‚Р°)");
      exit;
    }
 
@@ -108,7 +108,7 @@ $filename = $_FILES['filename'];
 	$fileadress = $location.$data.'.'.$_FILES["filename"]["name"];
      move_uploaded_file($_FILES["filename"]["tmp_name"], $fileadress);
    } else {
-      echo("alert(Ошибка загрузки файла)");
+      echo("alert(РћС€РёР±РєР° Р·Р°РіСЂСѓР·РєРё С„Р°Р№Р»Р°)");
    }
 
 //echo 'OK';
