@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Загрузка нового документа</title>
+	<title>Р—Р°РіСЂСѓР·РєР° РЅРѕРІРѕРіРѕ РґРѕРєСѓРјРµРЅС‚Р°</title>
 <style type ="text/css">
 #header {
 	position:absolute;
@@ -38,50 +38,50 @@ h3{
 <header>
 <div id="header">
 
-		<h1>Загрузка нового документа</h1>
+		<h1>Р—Р°РіСЂСѓР·РєР° РЅРѕРІРѕРіРѕ РґРѕРєСѓРјРµРЅС‚Р°</h1>
 </div>
 </header>
 <br><br><br><br>
 
 <div>
 <form action='DocsExplorer.php' method=post>
-	<button name='sort' value=1 style='background:url(sample-main.jpg); height:40px; position:absolute; top:57px;'><h2 style=" line-height:3px"> Назад </h2></button>	
+	<button name='sort' value=1 style='background:url(sample-main.jpg); height:40px; position:absolute; top:57px;'><h2 style=" line-height:3px"> РќР°Р·Р°Рґ </h2></button>	
 </form>
 
-<h3>Загрузчик</h3>
+<h3>Р—Р°РіСЂСѓР·С‡РёРє</h3>
 
 <div>
 <form action="upload.php" method="post" enctype="multipart/form-data">
 <table>
-<tr><td>Выберете тип загружаемого документа :</td><td><select name="doctype" required>
+<tr><td>Р’С‹Р±РµСЂРµС‚Рµ С‚РёРї Р·Р°РіСЂСѓР¶Р°РµРјРѕРіРѕ РґРѕРєСѓРјРµРЅС‚Р° :</td><td><select name="doctype" required>
     <option></option>
-    <option value="1">Заявка</option>
-    <option value="2">Тех. задание</option>
-    <option value="3">Спецификация</option>
-    <option value="4">Смета</option>
-    <option value="5">Коммерческое предложение</option>
-    <option value="6">Договор</option>
-    <option value="7">Наряд задание</option>
-    <option value="8">Акт выполненных работ</option>
+    <option value="1">Р—Р°СЏРІРєР°</option>
+    <option value="2">РўРµС…. Р·Р°РґР°РЅРёРµ</option>
+    <option value="3">РЎРїРµС†РёС„РёРєР°С†РёСЏ</option>
+    <option value="4">РЎРјРµС‚Р°</option>
+    <option value="5">РљРѕРјРјРµСЂС‡РµСЃРєРѕРµ РїСЂРµРґР»РѕР¶РµРЅРёРµ</option>
+    <option value="6">Р”РѕРіРѕРІРѕСЂ</option>
+    <option value="7">РќР°СЂСЏРґ Р·Р°РґР°РЅРёРµ</option>
+    <option value="8">РђРєС‚ РІС‹РїРѕР»РЅРµРЅРЅС‹С… СЂР°Р±РѕС‚</option>
    </select></td>
 
 </tr>
-<tr><td>Укажите статуc документа :</td><td><select name="status" required>
+<tr><td>РЈРєР°Р¶РёС‚Рµ СЃС‚Р°С‚Сѓc РґРѕРєСѓРјРµРЅС‚Р° :</td><td><select name="status" required>
     
     <option></option>
-    <option value="1">Новый</option>
-    <option value="2">Завершенный</option>
+    <option value="1">РќРѕРІС‹Р№</option>
+    <option value="2">Р—Р°РІРµСЂС€РµРЅРЅС‹Р№</option>
    </select></td></tr>
-<tr><td>Введите имя заказчика     :</td><td> <input type=text name="customer"> </td></tr>
-<tr><td>Введите название объекта  :</td><td> <input type=text name="object"> </td></tr>
-<tr><td>Введите адресс объекта    :</td><td> <input type=text name="adress"> </td></tr>
-<tr><td>Введите этап работы       :</td><td> <input type=text name="direction"> </td></tr>
-<tr><td>Имя загрузившего документ  :</td><td> <input type=text name="manager"> </td></tr>
-<tr><td>Выберете загружаемый документ :</td><td><input type="FILE" name="filename" required></td>
+<tr><td>Р’РІРµРґРёС‚Рµ РёРјСЏ Р·Р°РєР°Р·С‡РёРєР°     :</td><td> <input type=text name="customer"> </td></tr>
+<tr><td>Р’РІРµРґРёС‚Рµ РЅР°Р·РІР°РЅРёРµ РѕР±СЉРµРєС‚Р°  :</td><td> <input type=text name="object"> </td></tr>
+<tr><td>Р’РІРµРґРёС‚Рµ Р°РґСЂРµСЃСЃ РѕР±СЉРµРєС‚Р°    :</td><td> <input type=text name="adress"> </td></tr>
+<tr><td>Р’РІРµРґРёС‚Рµ СЌС‚Р°Рї СЂР°Р±РѕС‚С‹       :</td><td> <input type=text name="direction"> </td></tr>
+<tr><td>РРјСЏ Р·Р°РіСЂСѓР·РёРІС€РµРіРѕ РґРѕРєСѓРјРµРЅС‚  :</td><td> <input type=text name="manager"> </td></tr>
+<tr><td>Р’С‹Р±РµСЂРµС‚Рµ Р·Р°РіСЂСѓР¶Р°РµРјС‹Р№ РґРѕРєСѓРјРµРЅС‚ :</td><td><input type="FILE" name="filename" required></td>
 </tr>
 </table>
 <br>
-<button type=submit value=Загрузить style="height:50px"><p style='font-size: 1.5em;  line-height:5px ;'>Загрузить</p></button>
+<button type=submit value=Р—Р°РіСЂСѓР·РёС‚СЊ style="height:50px"><p style='font-size: 1.5em;  line-height:5px ;'>Р—Р°РіСЂСѓР·РёС‚СЊ</p></button>
 </form>
 </div>
 </body>
